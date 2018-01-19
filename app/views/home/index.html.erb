@@ -1,2 +1,6 @@
 <h1>Catsta</h1>
 <p>cat pics go here</p>
+
+<% @request.each do |cat| %>
+  <%= image_tag cat["url"], width: '200px', alt:"oops"%>
+<% end %>
