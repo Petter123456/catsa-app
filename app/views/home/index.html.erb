@@ -7,3 +7,6 @@
     [cat pic 1]
   </li>
 </ul>
+<% @request.each do |cat| %>
+  <%= image_tag cat["url"], width: '200px', alt:"oops"%>
+<% end %>
